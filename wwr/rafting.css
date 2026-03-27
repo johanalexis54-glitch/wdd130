@@ -1,0 +1,99 @@
+/* VARIABLES: Aquí guardas los colores y fuentes para no repetirlos. 
+   Si quieres cambiar un color, solo lo cambias aquí una vez. */
+:root {
+    --primary-color: #006699;
+    --secondary-color: #ffcc00;
+    --accent-color: #333333;
+    --white: #ffffff;
+    --background-light: #f4f4f4;
+    --font-main: "Roboto", Helvetica, sans-serif;
+    /* Define la fuente aquí */
+}
+
+/* RESET: Quita los espacios que los navegadores ponen por defecto 
+   para que tú tengas el control total desde cero. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUERPO: Estilos generales como la letra y el color de fondo. */
+body {
+    font-family: var(--font-main);
+    color: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* ESTRUCTURA BÁSICA: Estilo para que el header y las secciones se vean ordenadas. */
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    /* Espacio para logo y navegación */
+    align-items: center;
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuye los enlaces equitativamente */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Centra el contenido en la pantalla */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero {
+    position: relative;
+    /* Esto permite que el contenido interno se mueva libremente sobre la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero article {
+    position: absolute;
+    /* Superpone el texto sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Un fondo negro semitransparente para que el texto sea legible */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Crea columnas automáticas según el espacio */
+    gap: 20px;
+    /* Espacio entre las fotos */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    /* Altura fija para que todas se vean iguales */
+    object-fit: cover;
+    /* Recorta la imagen para que encaje perfectamente sin deformarse */
+    border-radius: 8px;
+    /* Bordes redondeados para un look moderno */
+}
