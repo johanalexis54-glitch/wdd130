@@ -17,13 +17,11 @@ body {
     font-family: var(--font-main);
     color: var(--accent-color);
     line-height: 1.6;
-    background-color: var(--white);
+    background-color: var(--background-light);
 }
 
-/* Ajuste de Hero para que el texto flote sobre la imagen */
 .hero {
     position: relative;
-    /* Requerido por auditor */
     display: block;
 }
 
@@ -34,22 +32,28 @@ body {
 
 .hero article {
     position: absolute;
-    /* Requerido por auditor */
-    top: 100px;
+    top: 50px;
     right: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 20px;
     max-width: 400px;
     border: 1px solid var(--secondary-color);
-    /* Usando la variable que faltaba */
 }
 
-.hero h1 {
+.hero article h1 {
     color: var(--primary-color);
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Estilos de navegación */
+.hero article img {
+    float: right;
+    width: 80px;
+    height: auto;
+    margin-left: 15px;
+    border: none;
+    box-shadow: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -65,7 +69,6 @@ header nav a {
     font-weight: bold;
 }
 
-/* Footer y Redes Sociales */
 footer {
     background-color: var(--accent-color);
     color: var(--white);
@@ -86,7 +89,6 @@ footer {
     height: auto;
 }
 
-/* Gallery */
 .gallery {
     display: flex;
     gap: 10px;
