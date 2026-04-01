@@ -56,6 +56,13 @@ header nav a.active {
     position: relative;
 }
 
+.hero h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -66,15 +73,13 @@ header nav a.active {
     position: absolute;
     top: 50px;
     right: 50px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: white;
     padding: 20px;
     max-width: 300px;
-    border: 1px solid #ccc;
 }
 
 .hero article h1 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
+    position: static;
 }
 
 .hero article img {
@@ -143,19 +148,19 @@ footer {
     }
 }
 
-.social media {
+.socialmedia {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-.social media a img {
+.socialmedia a img {
     width: 44px;
     height: 44px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-.social media a img:hover {
+.socialmedia a img:hover {
     transform: scale(1.1);
 }
