@@ -38,14 +38,15 @@ header nav {
 }
 
 header nav a {
-    color: var(--white);
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
 }
 
 header nav a.active {
-    color: var(--secondary-color);
+    color: #ffffff;
+    border-bottom: 2px solid var(--secondary-color);
     text-decoration: underline;
 }
 
