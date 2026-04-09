@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #006699;
+    --primary-color: #004d73;
     --secondary-color: #ffcc00;
     --accent-color: #333333;
     --white: #ffffff;
@@ -45,10 +45,10 @@ header nav a {
 }
 
 header nav a.active {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff !important;
+    background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid var(--secondary-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .contact-info {
