@@ -43,6 +43,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 2px;
+    padding: 15px;
+    box-shadow: none;
 }
 
 p {
