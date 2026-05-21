@@ -3,7 +3,6 @@
     --secondary-color: #002fff;
     --accent-color: #4269b1;
     --white: #ffffff;
-    --background-light: #f4f4f4;
     --font-main: Arial, sans-serif;
 }
 
@@ -286,7 +285,7 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 700px;
+    top: 90px;
     width: 95%;
     padding: 10px;
     text-align: center;
