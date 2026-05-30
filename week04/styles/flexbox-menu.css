@@ -5,16 +5,16 @@ body {
 
 nav {
     background-color: #36454f;
+    grid-template-columns: repeat(au);
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-    justify-content: space-around;
+    justify-content: ;
     align-items: center;
+    order: ;
+
 }
 
 nav a {
