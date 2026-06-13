@@ -212,7 +212,6 @@ th {
     color: white;
 }
 
-/* Textos específicos */
 .history p {
     color: #292929;
 }
@@ -266,7 +265,6 @@ button:hover {
     color: var(--accent-color);
 }
 
-/* Newsletter */
 .newsletter {
     background-color: #f4f4f4;
     padding: 30px;
